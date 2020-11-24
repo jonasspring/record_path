@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+  
+  <node pkg="record_path" type="record_path" name="record_path" output="screen" respawn="false">
+	<param name="path_file" type="string" value="/home/jonas/bagfiles/Test_asterix5/path.bag"/>
+	<param name="output_directory" type="string" value="/home/jonas/bagfiles/Test_asterix5/"/>
+	<param name="send_bag" type="bool" value="true"/>
+	<param name="drive_back" type="bool" value="true"/>
+	<param name="speed" type="double" value="0.2"/>	
+  </node>
+  
+</launch>
+
